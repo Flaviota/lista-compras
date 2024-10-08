@@ -1,0 +1,39 @@
+div{
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    vertical-align: middle;
+    width: 40vw;
+    /* height: 6vh; */
+    margin: auto;
+    
+} 
+p{
+    margin-top: 2vh;
+    --cinzaForte: #424242;
+    --cinzaFraco: #949494;
+    background-color: var(--cinzaForte);
+
+    color: white;
+    width: 70vw;
+    height: 4vh;
+    text-align: center;
+    vertical-align: middle;
+    
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    
+    
+}
+
+@media (max-width: 750px){
+    div{
+        min-width: 75vw;
+    }
+}

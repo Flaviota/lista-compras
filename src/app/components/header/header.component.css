@@ -1,0 +1,67 @@
+h1{
+
+    --cinzaForte: #424242;
+    --cinzaFraco: #949494;
+    text-align: center;
+    /* margin: 30px; */
+    background-color: #F2E1BC;
+    color: white;
+    font: normal bold 3em sans-serif;
+    
+}
+
+nav{
+    margin-bottom:10px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cinzaForte);
+    
+    /* min-width: 50vw; */
+    max-width: 40vw;
+    margin:10px auto ;
+    /* border: 1px solid var(--cinzaFraco); */
+    border-radius: 10px;
+}
+span{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    max-width: 25vw;
+    display: flex;
+}
+
+a{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font: 20px sans-serif;
+    width: 15vw;
+    max-height: 12vw;
+    
+}
+nav a{
+    font: normal bold 1.5em sans-serif;
+}
+nav a:hover{
+    background-color: white;
+    color: var(--cinzaForte);
+    border-radius: 10px;
+
+}
+
+@media (max-width: 750px){
+
+    nav{
+        min-width: 75vw;
+    }
+
+    span{
+
+    }
+
+    a{
+    }
+}

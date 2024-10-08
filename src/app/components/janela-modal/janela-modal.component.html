@@ -1,0 +1,10 @@
+<div class="janela-modal">
+  <h1 mat-dialog-title>Deletar Lista</h1>
+  <div mat-dialog-content>
+    <p>{{ data.mensagem}} </p>
+  </div>
+  <div id='botoes' mat-dialog-actions>
+    <button mat-button (click)="fechar()">Cancelar lista</button>
+    <button mat-button (click)="confirmar()" cdkFocusInitial>Confirmar</button>
+  </div>
+</div>

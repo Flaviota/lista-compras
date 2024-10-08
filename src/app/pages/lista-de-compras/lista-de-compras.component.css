@@ -1,0 +1,112 @@
+body{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remover seta nos campos numeros */
+input[type=number] { 
+    -moz-appearance: textfield;
+  }
+
+
+label{
+    padding: 10px;
+}
+
+table{
+    border: 2px #F2E1BC solid;
+}
+
+
+#InputsProduto{
+    border-radius: 1vh;
+    margin-bottom: 10px;
+    background-color: rgb(158, 148, 148);
+    /* min-width: 80vw; */
+    width: 45vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; 
+    /* align-items: center; */
+    padding: 10px;
+
+}
+
+mat-form-field{
+    /* width: auto; */
+}
+
+.InputsNumeros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+.InputsNumeros input{
+    text-align: right;
+
+}
+
+.InputsNumeros mat-form-field{
+    /* width: 48%; */
+}
+input[type="button"]{
+    
+    margin: 15px auto;
+    width: 20vw;
+}
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+.botoes{
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    
+}
+
+.botoes button{
+    text-align: center;
+    margin: 5px;
+    /* width: 120px; */
+}
+
+@media (max-width: 750px){
+
+    #InputsProduto{
+        min-width: 65vw;
+    }
+    .InputsNumeros{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2px;
+    }
+
+    .InputsNumeros mat-form-field{
+        /* width: 100%; */
+    }
+    
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+    }
+}
